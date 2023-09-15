@@ -1,0 +1,41 @@
+<p>registrar works!</p>
+<hr class="border border-danger border-2 opacity-50">
+<li class="grid text-center"data-content id="asesor" style="list-style: none;">
+  <select id="tidocument" name="tipDocument[]">
+      <option value="#">Opciones de Acceso</option>
+      <option value="crearUsuario">Crear</option>
+      <option value="eliminarUsuario">Eliminar</option>
+  </select>
+  <hr class="border border-danger border-2 opacity-50">
+  <select id="tidocument" name="tipDocument[]">
+      <option value="cedUsuario">Tipo Documento</option>
+      <option value="cedUsuario">Cedula</option>
+      <option value="tarUsuario">Targeta</option>
+  </select>
+  <hr class="border border-danger border-2 opacity-50">
+  <form action="/procesar-formulario" method="post">
+  <!-- Aquí irían los campos del formulario -->
+    <div class="g-col-4">
+      <input type="int" name="numUsuario" placeholder="Numero Documento">
+    </div>
+    <div class="g-col-4">
+      <input type="text" name="nomUsuario" placeholder="Nombre">
+    </div>
+    <div class="g-col-4">
+      <input type="text" name="ApeUsuario" placeholder="Apellido">
+    </div>
+    <div class="g-col-4">
+      <input type="text" name="DirUsuario" placeholder="Dirección">
+    </div>
+    <div class="g-col-4">
+      <input type="text" name="TelUsuario" placeholder="Telefono">
+    </div>
+    <div class="g-col-4">
+      <input type="email" name="Email" placeholder="Correo">
+    </div>
+  </form>
+</li>
+<hr class="border border-danger border-2 opacity-50">
+<div class="grid text-center">
+  <button routerLink="/ticket" class="g-col-4">Enviar</button>
+</div>
