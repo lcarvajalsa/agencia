@@ -1,0 +1,83 @@
+/* Estilos para el encabezado */
+header {
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto en el encabezado */
+  padding: 20px 0; /* Espaciado interior superior e inferior del encabezado */
+  text-align: center; /* Alineación del texto en el centro */
+}
+
+/* Estilos para el logotipo en el encabezado (si lo tienes) */
+header img {
+  max-width: 100px; /* Ancho máximo de la imagen del logotipo */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+/* Estilos para la navegación en el encabezado */
+header nav ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el espacio interior de la lista */
+}
+
+header nav ul li {
+  display: inline; /* Hace que los elementos de la lista se muestren en línea */
+  margin-right: 20px; /* Espaciado a la derecha entre elementos de la lista */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para enlaces en el encabezado cuando se desplaza sobre ellos */
+header nav ul li a:hover {
+  color: #ff9900; /* Cambia el color del texto al pasar el mouse */
+}
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 400px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px;
+  background-color: #f5f5f5; /* Color de fondo del contenedor */
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilos para el título del formulario */
+.container h2 {
+  text-align: center;
+  color: #333; /* Color del texto */
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 8px; /* Espaciado inferior entre etiquetas */
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px; /* Espaciado inferior entre campos */
+  border: 1px solid #ccc; /* Borde del campo */
+  border-radius: 4px; /* Borde redondeado */
+}
+
+/* Estilos para el botón de inicio de sesión */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+/* Estilos para el botón de inicio de sesión cuando se desplaza sobre él */
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}

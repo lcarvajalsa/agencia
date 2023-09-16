@@ -1,48 +1,24 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/publica" href="#">Inicio</a></li>
+      <li><a routerLink="/registrar" href="#">Registrate</a></li>
+      <li><a routerLink="/registrar" href="#">Reserva</a></li>
+      <li><a routerLink="/ticket" href="#">Ticket</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form action="procesar_login.php" method="post">
+      <label for="usuario">Usuario:</label>
+      <input type="text" id="usuario" name="usuario" required>
 
-<div class="login-container">
-  <h2>Login</h2>
-  <hr class="border border-danger border-2 opacity-50">
-  <form>
-    <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-      <div class="container text-center">
-        <div class="row">
-          <div class="grid text-center">
-            <div class="g-col-4">
-              <label for="origen">Ingresar origen</label>
-            </div>
-            <div class="g-col-4">
-              <input type="origen" id="origen" name="origen" required>
-            </div>
-          <br>
-          <div class="g-col-4">
-            <label for="destino">Ingresar destino:</label>
-          </div>
-          <div class="g-col-4">
-            <input type="destino" id="destino"  name="destino" required>
-          </div>
-          <div class="g-col-4">
-            <label for="time">Ida Fecha:</label>
-          </div>
-          <div class="g-col-4">
-            <input type="time" id="ida"  name="ida" required>
-          </div>
-          <div class="g-col-4">
-            <label for="time">Vuelta Fecha:</label>
-          </div>
-          <div class="g-col-4">
-            <input type="time" id="vuelta"  name="vuelta" required>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" required>
+
+      <input routerLink="/ticket"type="submit" value="Iniciar Sesión">
   </form>
-  <hr class="border border-danger border-2 opacity-50">
-  <div class="text-success">
-    <div class="grid text-center">
-      <button routerLink="/registrar" class="g-col-4">Buscar</button>
-    </div>
-
-  </div>
+</div>
 

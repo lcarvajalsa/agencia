@@ -1,0 +1,160 @@
+/* Estilos para el encabezado */
+header {
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color del texto en el encabezado */
+  padding: 20px 0; /* Espaciado interior superior e inferior del encabezado */
+  text-align: center; /* Alineación del texto en el centro */
+
+}
+
+/* Estilos para el logotipo en el encabezado (si lo tienes) */
+header img {
+  max-width: 100px; /* Ancho máximo de la imagen del logotipo */
+  height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+}
+
+/* Estilos para la navegación en el encabezado */
+header nav ul {
+  list-style: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el espacio interior de la lista */
+}
+
+header nav ul li {
+  display: inline; /* Hace que los elementos de la lista se muestren en línea */
+  margin-right: 20px; /* Espaciado a la derecha entre elementos de la lista */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para enlaces en el encabezado cuando se desplaza sobre ellos */
+header nav ul li a:hover {
+  color: #ff9900; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Estilos para la sección de búsqueda de vuelos */
+.search-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.search-section input[type="text"],
+.search-section input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+/* Estilos para la sección de búsqueda de vuelos */
+.search-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.search-section input[type="text"],
+.search-section input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-section input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilos para la sección de ofertas especiales */
+.special-offers {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.special-offers h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.offer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.offer img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.offer p {
+  font-size: 16px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Estilos para enlaces en el pie de página */
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos para enlaces en el pie de página cuando se desplaza sobre ellos */
+footer a:hover {
+  text-decoration: underline;
+}

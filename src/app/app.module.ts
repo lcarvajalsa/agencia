@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrarComponent } from './registrar/registrar.component';
 import { PublicaComponent } from './publica/publica.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { ReservaComponent } from './reserva/reserva.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TicketComponent } from './ticket/ticket.component';
     LoginComponent,
     RegistrarComponent,
     PublicaComponent,
-    TicketComponent
+    TicketComponent,
+    ReservaComponent
   ],
   imports: [
     BrowserModule,

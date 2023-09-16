@@ -1,24 +1,50 @@
-<h2>Razones por las que disfrutarás quedarte con nosotros</h2>
 
-            <div class="feature_row">
-                <article class="feature-box box1">
-                    <i class="fa-solid fa-bell-concierge"></i>
-                    <h3>Lorem ipsum dolor.</h3>
-                </article>
-                <article class="feature-box box2">
-                    <i class="fa-solid fa-bed"></i>
-                    <h3>Lorem ipsum dolor.</h3>
-                </article>
-                <article class="feature-box box1">
-                    <i class="fa-solid fa-wifi"></i>
-                    <h3>Lorem ipsum dolor.</h3>
-                </article>
-                <article class="feature-box box2">
-                    <i class="fa-solid fa-dumbbell"></i>
-                    <h3>Lorem ipsum dolor.</h3>
-                </article>
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/publica" href="#">Inicio</a></li>
+      <li><a routerLink="/reserva" href="#">Consultar reserva</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<h1>Reserva de Viaje</h1>
+  <form action="procesar_reserva.php" method="post">
+      <label for="origen">Origen:</label>
+      <select id="origen" name="origen">
+        <option value="ciudad1">Bogotá</option>
+        <option value="ciudad1">Medellín</option>
+        <option value="ciudad2">Montería</option>
+        <option value="ciudad3">Armenia</option>
+        <option value="ciudad1">Ibagué</option>
+        <option value="ciudad2">Cali</option>
+        <option value="ciudad3">Pereira</option>
+        <option value="ciudad2">Villavicencio</option>
+        <option value="ciudad3">Cúcuta</option>
+        <!-- Agrega más opciones de origen según sea necesario -->
+      </select>
 
-            </div>
-            <div class="grid text-center">
-              <button routerLink="/publica" class="g-col-4">Enviar</button>
-            </div>
+      <label for="destino">Destino:</label>
+      <select id="destino" name="destino">
+        <option value="ciudadA"></option>
+        <option value="ciudad1">Bogotá</option>
+        <option value="ciudad1">Medellín</option>
+        <option value="ciudad2">Montería</option>
+        <option value="ciudad3">Armenia</option>
+        <option value="ciudad1">Ibagué</option>
+        <option value="ciudad2">Cali</option>
+        <option value="ciudad3">Pereira</option>
+        <option value="ciudad2">Villavicencio</option>
+        <option value="ciudad3">Cúcuta</option>
+          <!-- Agrega más opciones de destino según sea necesario -->
+      </select>
+
+      <label for="fecha_salida">Fecha de Salida:</label>
+      <input type="date" id="fecha_salida" name="fecha_salida" required>
+
+      <label for="fecha_regreso">Fecha de Regreso:</label>
+      <input type="date" id="fecha_regreso" name="fecha_regreso" required>
+
+      <input routerLink="/reserva" type="submit" value="Reservar">
+  </form>

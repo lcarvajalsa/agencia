@@ -1,0 +1,22 @@
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/publica" href="#">Inicio</a></li>
+      <li><a routerLink="/registrar" href="#">Registrate</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<h1>Consulta de Reserva</h1>
+
+    <form action="procesar_consulta.php" method="post">
+        <label for="numero_reserva">Número de Reserva:</label>
+        <input type="text" id="numero_reserva" name="numero_reserva" required>
+        <input routerLink="/publica" type="submit" value="Consultar">
+    </form>
+
+    <!-- Aquí se mostrará la información de la reserva consultada -->
+    <div id="info_reserva">
+        <!-- Los datos de la reserva se insertarán aquí -->
+    </div>

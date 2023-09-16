@@ -1,36 +1,67 @@
-<nav>
-  <div class="logo">
-      <img src="assets/img/Hotelia horizontal blanco.svg">
-  </div>
-  <div class="menu">
-      <a href="index.html" class="item">Inicio</a>
-      <a href="ubicanos.html" class="item">Ubícanos</a>
-      <a href="opiniones.html" class="item">Opiniones</a>
-      <a href="#" class="item"><i class="fa-solid fa-user"></i> Iniciar Sesión</a>
-  </div>
-</nav>
-<section id="features">
-  <h2 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h2>
-  <div class="features-description">
-      <div class="feature feature-blue">
-          <i class="fa-solid fa-bell-concierge"></i>
-          <p>Lorem ipsum dolor</p>
-      </div>
-      <div class="feature feature-black">
-          <i class="fa-solid fa-bed"></i>
-          <p>Lorem ipsum dolor</p>
-      </div>
-      <div class="feature feature-blue">
-          <i class="fa-solid fa-wifi"></i>
-          <p>Lorem ipsum dolor</p>
-      </div>
-      <div class="feature feature-black">
-          <i class="fa-solid fa-dumbbell"></i>
-          <p>Lorem ipsum dolor</p>
-      </div>
-  </div>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<header>
+
+  <nav>
+    <ul>
+      <li><a routerLink="/publica" href="#">Inicio</a></li>
+      <li><a routerLink="/login" href="#">Mis viajes</a></li>
+      <li><a routerLink="/registrar" href="#">Registrate</a></li>
+      <li><a routerLink="/ticket" href="#">Ticket</a></li>
+    </ul>
+  </nav>
+</header>
+<br>
+<section class="search-section">
+  <h2>Encuentra tu próximo vuelo</h2>
+  <form action="buscar_vuelos.php" method="post">
+      <label for="origen">Origen:</label>
+      <select id="origen" name="origen">
+        <option value="ciudad1">Bogotá</option>
+        <option value="ciudad2">Medellín</option>
+        <option value="ciudad3">Montería</option>
+        <option value="ciudad4">Armenia</option>
+        <option value="ciudad5">Ibagué</option>
+        <option value="ciudad6">Cali</option>
+        <option value="ciudad7">Pereira</option>
+        <option value="ciudad8">Villavicencio</option>
+        <option value="ciudad9">Cúcuta</option>
+        <!-- Agrega más opciones de origen según sea necesario -->
+      </select>
+
+      <label for="destino">Destino:</label>
+      <select id="origen" name="origen">
+        <option value="ciudad1">Bogotá</option>
+        <option value="ciudad1">Medellín</option>
+        <option value="ciudad2">Montería</option>
+        <option value="ciudad3">Armenia</option>
+        <option value="ciudad1">Ibagué</option>
+        <option value="ciudad2">Cali</option>
+        <option value="ciudad3">Pereira</option>
+        <option value="ciudad2">Villavicencio</option>
+        <option value="ciudad3">Cúcuta</option>
+        <!-- Agrega más opciones de origen según sea necesario -->
+      </select>
+      <label for="fecha_salida">Fecha de Salida:</label>
+      <input type="date" id="fecha_salida" name="fecha_salida" required>
+
+      <input routerLink="/login" type="submit" value="Buscar Vuelos">
+  </form>
 </section>
-<nav>
-  <div class="grid text-center">
-    <button routerLink="/login" class="g-col-4">Enviar</button>
+
+<!-- Sección de ofertas especiales
+<section class="special-offers">
+  <h2>Ofertas Especiales</h2>
+  <div class="offer">
+      <img src="../img/pasto.JPG" alt="Oferta 1">
+      <p>Descuento del 20% en vuelos a destinos populares.</p>
   </div>
+  <div class="offer">
+      <img src="../img/pasto.JPG" alt="Oferta 2">
+      <p>Oferta especial de vuelos de fin de semana.</p>
+  </div>
+</section>-->
+
+<!-- Pie de página -->
+<footer>
+  <p>Derechos de autor &copy; 2023 Compañía de Vuelos. Todos los derechos reservados.</p>
+</footer>
