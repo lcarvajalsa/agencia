@@ -7,15 +7,9 @@ import { TaskService } from './task.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'agencia-app';
-  newTask = '';
+  title = 'agencia-app'
 
-  constructor(private taskService: TaskService) {}
-
-  addTask() {
-    if (this.newTask) {
-      this.taskService.addTask(this.newTask);
-      this.newTask = '';
-    }
+  changeTitle(){
+    this.title = 'changed';
   }
 }
