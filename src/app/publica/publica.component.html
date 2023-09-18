@@ -4,18 +4,18 @@
   <nav>
     <ul>
       <li><a routerLink="/publica" href="#">Inicio</a></li>
-      <li><a routerLink="/login" href="#">Mis viajes</a></li>
       <li><a routerLink="/registrar" href="#">Registrate</a></li>
+      <li><a routerLink="/login" href="#">Mis viajes</a></li>
+      <li><a routerLink="/registrar" href="#">Reserva</a></li>
       <li><a routerLink="/ticket" href="#">Ticket</a></li>
     </ul>
   </nav>
 </header>
-<br>
 <section class="search-section">
   <h2>Encuentra tu próximo vuelo</h2>
   <form action="buscar_vuelos.php" method="post">
       <label for="origen">Origen:</label>
-      <select id="origen" name="origen">
+      <select class="search-section"id="origen" name="origen">
         <option value="ciudad1">Bogotá</option>
         <option value="ciudad2">Medellín</option>
         <option value="ciudad3">Montería</option>
@@ -29,7 +29,7 @@
       </select>
 
       <label for="destino">Destino:</label>
-      <select id="origen" name="origen">
+      <select class="search-section"id="origen" name="origen">
         <option value="ciudad1">Bogotá</option>
         <option value="ciudad1">Medellín</option>
         <option value="ciudad2">Montería</option>
@@ -42,26 +42,11 @@
         <!-- Agrega más opciones de origen según sea necesario -->
       </select>
       <label for="fecha_salida">Fecha de Salida:</label>
-      <input type="date" id="fecha_salida" name="fecha_salida" required>
+      <input class="search-section" type="date" id="fecha_salida" name="fecha_salida" required>
 
       <input routerLink="/login" type="submit" value="Buscar Vuelos">
   </form>
 </section>
-
-<!-- Sección de ofertas especiales
-<section class="special-offers">
-  <h2>Ofertas Especiales</h2>
-  <div class="offer">
-      <img src="../img/pasto.JPG" alt="Oferta 1">
-      <p>Descuento del 20% en vuelos a destinos populares.</p>
-  </div>
-  <div class="offer">
-      <img src="../img/pasto.JPG" alt="Oferta 2">
-      <p>Oferta especial de vuelos de fin de semana.</p>
-  </div>
-</section>-->
-
-<!-- Pie de página -->
-<footer>
+<footer >
   <p>Derechos de autor &copy; 2023 Compañía de Vuelos. Todos los derechos reservados.</p>
 </footer>

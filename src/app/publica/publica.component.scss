@@ -1,6 +1,6 @@
 /* Estilos para el encabezado */
 header {
-  background-color: #333; /* Color de fondo del encabezado */
+  background-color: lightblue; /* Color de fondo del encabezado */
   color: #fff; /* Color del texto en el encabezado */
   padding: 20px 0; /* Espaciado interior superior e inferior del encabezado */
   text-align: center; /* Alineación del texto en el centro */
@@ -77,8 +77,8 @@ header nav ul li a:hover {
 
 /* Estilos para la sección de búsqueda de vuelos */
 .search-section {
-  background-color: #fff;
-  padding: 20px;
+  background-color: aliceblue;
+  padding: 5% 40% 5%;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -144,7 +144,9 @@ footer {
   background-color: #007BFF;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  border: #333;
+  margin: 1.5%;
+  border-radius: 4px;
 }
 
 /* Estilos para enlaces en el pie de página */
@@ -152,9 +154,15 @@ footer a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+
 }
 
 /* Estilos para enlaces en el pie de página cuando se desplaza sobre ellos */
 footer a:hover {
   text-decoration: underline;
+}
+.fecha {
+  margin: 0.2%;
+  border-radius: 4px;
+
 }

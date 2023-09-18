@@ -9,6 +9,5 @@ export class LoginComponent {
 
 }
 export class MiComponenteComponent {
-  // Ruta a la imagen en la carpeta assets
-  imagenUrl = '../img/pasto.JPG';
+
 }

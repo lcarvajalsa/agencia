@@ -1,6 +1,6 @@
 /* Estilos para el encabezado */
 header {
-  background-color: #333; /* Color de fondo del encabezado */
+  background-color: lightblue; /* Color de fondo del encabezado */
   color: #fff; /* Color del texto en el encabezado */
   padding: 20px 0; /* Espaciado interior superior e inferior del encabezado */
   text-align: center; /* Alineación del texto en el centro */
@@ -72,4 +72,10 @@ input[type="submit"] {
 /* Estilos para el botón de registro cuando se desplaza sobre él */
 input[type="submit"]:hover {
   background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+.search-section {
+  background-color: aliceblue;
+  padding: 0% 40% 5% 49%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
